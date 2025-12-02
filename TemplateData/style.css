@@ -19,16 +19,17 @@ body {
 	position: relative;
 }
 #unity-canvas {
-    position: absolute; /* или fixed, если нужно фиксировать относительно окна */
+    position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     width: min(calc(100vh * (16/9)), 100vw);
     max-width: 100%;
     max-height: 100%;
     height: auto;
     aspect-ratio: 16/9;
     display: block;
-    background-color: #f0f0f0; /* пример фона, можно убрать или изменить */
+    background-color: #1A1A1A; 
 }
 #loading-cover {
     position: absolute;
